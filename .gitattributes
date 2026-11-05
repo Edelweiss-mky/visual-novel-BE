@@ -1,0 +1,29 @@
+# Fins de ligne : le dépôt stocke toujours LF, quel que soit l'OS.
+# "text=auto" laisse git détecter les fichiers texte ; "eol=lf" impose LF
+# aussi dans les copies de travail, sous Windows comme sous Linux.
+* text=auto eol=lf
+
+# Scripts Windows : ils exigent CRLF pour s'exécuter correctement.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Fichiers binaires (assets du visual novel) : jamais de conversion ni de diff texte.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.psd   binary
+*.mp3   binary
+*.ogg   binary
+*.wav   binary
+*.mp4   binary
+*.webm  binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+*.zip   binary
+*.pdf   binary
